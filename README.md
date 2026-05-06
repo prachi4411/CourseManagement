@@ -78,26 +78,11 @@ course-management-system/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/your-username/course-management-system.git
 cd course-management-system
 ```
 
 ---
 
-# 🔧 Backend Setup
-
-## Configure Database
-
-Update `application.properties`
-
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/course_db
-spring.datasource.username=root
-spring.datasource.password=yourpassword
-
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-```
 
 ## Run Backend
 
@@ -201,11 +186,3 @@ Example:
 
 **Prachi Wankar**
 
-- GitHub: https://github.com/your-github-username
-- LinkedIn: https://linkedin.com/in/your-linkedin-profile
-
----
-
-# 📜 License
-
-This project is licensed under the MIT License.
