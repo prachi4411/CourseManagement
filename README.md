@@ -1,12 +1,211 @@
-# React + Vite
+# 🎓 Course Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Full Stack Course Management System built using **Spring Boot**, **React.js**, and **MySQL/PostgreSQL**.  
+This application allows users to manage courses with features like course creation, updating, deletion, prerequisite validation, and responsive frontend integration.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🚀 Features
 
-## Expanding the ESLint configuration
+## Backend Features
+- RESTful API development using Spring Boot
+- Create, update, delete, and fetch courses
+- Course prerequisite validation
+- Global exception handling
+- Proper HTTP status codes
+- Input validation using Jakarta Validation
+- Database integration using JPA/Hibernate
+- Docker support
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Frontend Features
+- Responsive UI using React.js
+- Course listing page
+- Add/Edit/Delete course functionality
+- API integration with backend
+- User-friendly interface
+
+---
+
+# 🛠️ Tech Stack
+
+## Backend
+- Java 17
+- Spring Boot
+- Spring Data JPA
+- Hibernate
+- Maven
+- MySQL / PostgreSQL
+
+## Frontend
+- React.js
+- Axios
+- Bootstrap / CSS
+
+## Tools & Platforms
+- Git & GitHub
+- Docker
+- Postman
+
+---
+
+# 📂 Project Structure
+
+```bash
+course-management-system/
+│
+├── backend/
+│   ├── controller/
+│   ├── service/
+│   ├── repository/
+│   ├── model/
+│   ├── dto/
+│   ├── exception/
+│   └── config/
+│
+├── frontend/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   └── App.js
+│
+└── docker-compose.yml
+```
+
+---
+
+# ⚙️ Installation & Setup
+
+## Clone Repository
+
+```bash
+git clone https://github.com/your-username/course-management-system.git
+cd course-management-system
+```
+
+---
+
+# 🔧 Backend Setup
+
+## Configure Database
+
+Update `application.properties`
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/course_db
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+```
+
+## Run Backend
+
+```bash
+cd backend
+mvn spring-boot:run
+```
+
+Backend will run on:
+
+```bash
+http://localhost:8080
+```
+
+---
+
+# 💻 Frontend Setup
+
+## Install Dependencies
+
+```bash
+cd frontend
+npm install
+```
+
+## Run Frontend
+
+```bash
+npm start
+```
+
+Frontend will run on:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+# 🐳 Docker Setup
+
+Run project using Docker:
+
+```bash
+docker-compose up --build
+```
+
+---
+
+# 📡 API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/courses` | Get all courses |
+| GET | `/api/courses/{id}` | Get course by ID |
+| POST | `/api/courses` | Create course |
+| PUT | `/api/courses/{id}` | Update course |
+| DELETE | `/api/courses/{id}` | Delete course |
+
+---
+
+# 🧪 Sample JSON
+
+## Create Course
+
+```json
+{
+  "title": "Java Programming",
+  "description": "Complete Java course",
+  "duration": 60,
+  "prerequisiteCourseId": 1
+}
+```
+
+---
+
+# 📸 Screenshots
+
+Add your project screenshots here.
+
+Example:
+- Dashboard
+- Course List
+- Add Course Form
+- API Testing
+
+---
+
+# 🌟 Future Enhancements
+
+- JWT Authentication & Authorization
+- Student Enrollment Module
+- Admin Dashboard
+- Course Progress Tracking
+- Email Notifications
+- Cloud Deployment
+
+---
+
+# 👨‍💻 Author
+
+**Prachi Wankar**
+
+- GitHub: https://github.com/your-github-username
+- LinkedIn: https://linkedin.com/in/your-linkedin-profile
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
